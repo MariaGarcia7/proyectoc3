@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Lenguaje en español-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear formulario</title>
+</head>
+<body>
+    <header>
+         <!--crear logo de la pagina-->
+        <a href="index.html" title="ir a Pagina inicial"> 
+            <img src="../img/logo2.jpeg" alt="Logo del proyecto" />
+        </a>
+        <nav>
+            <!--crear lista-->
+            <ul>
+                <!--Items que tendrá la lista-->
+                <li><a href="index2.html" target="_blank">Bienvenida</a></li>
+            </ul>
+        </nav>              
+    </header>
+
+    <main> 
+        <center>
+            <h1>Crear un formulario</h1>        
+            <br /><br />
+            <form>
+                <label>Nombre: </label>
+                <input type="text" name="txtNombre" maxlength="100" size="40" required><br /><br />
+                <label>Edad: </label>
+                <input type="number" name="txtEdad" min="0" max="150" size ="40"><br /><br />
+                <label>Fecha de nacimiento </label>
+                <input type="date" name="txtFecha"><br /><br />
+                <label>Correo electrónico:</label>
+                <input type="email" name="txtCorreo"><br /><br />
+                <label>Contraseña</label>
+                <input type="password" name="txtContraseña"><br /><br />
+                <input type="submit" value="Grabar">
+            </form>
+        </center> 
+    </main>
+
+    <footer> 
+        <!--Pie de página y parte informativa -->
+        Curso HTML del ciclo 3 MINTIC
+    </footer> 
+
+</body>
+</html>
