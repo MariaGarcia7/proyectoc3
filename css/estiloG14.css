@@ -1,0 +1,38 @@
+/* estilo para una etiqueta existe*/
+h1 {
+    color:sienna;
+    background-color:rgba(148, 201, 138, 0.767) ;
+    font-family: cursive;
+    font-size: 300%; /*Tamaño de letra*/
+}
+h2{
+    color:rgb(2, 34, 23);
+    background-color:coral ;
+    font-family: cursive;
+    font-size: 150%; /*Tamaño de letra*/ 
+}
+body{
+    color:black;
+    background-color:darksalmon;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+div{
+    background-color: rgb(51, 156, 170);
+    color: cornsilk;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Primer estilo aplicandolo para un class*/
+.estilo_div{    
+    position: center;
+    color: olive;
+}
+
+/* aplicandolo para el id*/
+#parrafo1{
+    color: violet;
+}
+#parrafo2{
+    color:red ;
+}
