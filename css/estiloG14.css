@@ -3,7 +3,7 @@ h1 {
     color:sienna;
     background-color:rgba(148, 201, 138, 0.767) ;
     font-family: cursive;
-    font-size: 300%; /*Tamaño de letra*/
+    font-size: 200%; /*Tamaño de letra*/
 }
 h2{
     color:rgb(2, 34, 23);
@@ -13,15 +13,15 @@ h2{
 }
 body{
     color:black;
-    background-color:darksalmon;
+    background-color:rgb(230, 202, 193);
     font-family: 'Times New Roman', Times, serif;
     font-size: 100%;
 }
-div{
-    background-color: rgb(51, 156, 170);
+/*div{
+    background-color: rgb(179, 186, 187);
     color: cornsilk;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+}*/
 
 /* Primer estilo aplicandolo para un class*/
 .estilo_div{    
@@ -31,8 +31,117 @@ div{
 
 /* aplicandolo para el id*/
 #parrafo1{
-    color: violet;
+    color:black;
 }
 #parrafo2{
     color:red ;
+}
+.caja_grande{
+    width: 30%;
+    height: 200px;
+    background-color: brown;
+    border-style: solid;
+    border-color: black; 
+    display: inline-block; /*Para colocar las cajas de forma seguida*/  
+}
+.caja_morada{
+    display: flex; /* nos da dos cajas seguidas*/
+    /*background-color: violet;*/
+}
+.caja_naranja{
+    width: 70%;
+    height: 45px;
+    /*background-color: orange;*/
+    text-align: center;
+}
+.caja_amarilla{
+    width: 28%;
+    height: 45px;
+    background-color:violet;
+    text-align: right; 
+    padding: 3px 0px 3px 3px;
+}
+.caja_azul_oscuro{
+    display: flex;
+    /*background-color: blue;*/
+}
+.caja_azul_claro{
+    width: 48%;
+    height: 100px;
+    /*background-color: cyan;*/
+    padding: 0px 0px 0px 20px;
+}
+.caja_verde{
+    width: 48%;
+    height: 100px;
+    /*background-color: green;*/
+}
+.caja_roja{
+    width: 98%;
+    height: 45px;
+    /*background-color: red;*/    
+    text-align: right;
+}
+.icono1{
+    font-size: 30px;
+    color: indigo;
+    padding: 5px 5px 0px 10px;
+}
+.diseño_boton{
+    width: 30%;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    border-color: orange;
+    margin: 20px;
+}
+#menu ul{
+    display: flex;/*Para que me quede horizontal algo en frente del otro*/
+    list-style: none; /*No coloque ningun estilo de puntico o circulo como viñeta*/
+    justify-content: center;
+}
+#menu li a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    border-width: 2px;
+    border-style: dashed; /*linea punteada*/
+    border-color: orangered;
+    color: white;
+    margin: 0px 20px 30px 0px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 14px;
+}
+#menu a:hover{
+    background-color: orangered; /*me pinta el boton cuando lo señalo con el mous*/
+    cursor: pointer;
+}
+.formulario{
+    width: 50%;
+    background-color: white;    
+    text-align: left;
+    padding: 20px 0px 20px 100px ;
+}
+.diseño_label{
+    display: inline-block; /*para tener sobre una misma linea label con txt*/
+    width: 30%;  
+}
+.diseño_imput{
+    display: inline-block;
+    width: 50%;    
+}
+.boton_formulario{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+    border-style:dashed;
+    border-color: orangered;
+    border-width: 2px;    
+}
+.boton_formulario:hover{
+    background-color: orangered;
+    cursor: pointer;
 }

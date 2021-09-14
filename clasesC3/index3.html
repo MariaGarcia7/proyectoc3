@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear formulario</title>
     <link rel="stylesheet" href="../css/estiloG14.css">
+    <script src="https://kit.fontawesome.com/e91d3e76d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
         <a href="index.html" title="ir a Pagina inicial"> 
             <center><img src="../img/logo2.jpeg" alt="Logo del proyecto" /></center>
         </a>
-        <nav>
+        <nav id="menu">
             <!--crear lista-->
             <ul>
                 <!--Items que tendrá la lista-->
@@ -28,47 +29,50 @@
         <center>
             <h1>Crear un formulario</h1>        
             <br />
-            <form>
-                <label for="nombre">Nombre: </label>&nbsp;
-                <input type="text" id="nombre" name="txtNombre" maxlength="100" size="40" style="width: 300px;" required placeholder="Ingrese su nombre completo"><br /><br />
+            <form class="formulario">
+                <label class="diseño_label" for="nombre">Nombre: </label>&nbsp; <!--dejé el nbsp para espacio entre linea-->
+                <input class="diseño_imput" type="text" id="nombre" name="txtNombre" maxlength="100" size="40" required placeholder="Ingrese su nombre completo"><br /><br />
 
-                <label for="edad">Edad: </label>&nbsp;
-                <input type="number" id="edad" name="txtEdad" min="0" max="150" size ="40"><br /><br />
+                <label class="diseño_label" for="edad">Edad: </label>&nbsp;
+                <input class="diseño_imput" type="number" id="edad" name="txtEdad" min="0" max="150" size ="40"><br /><br />
 
-                <label for="fecha">Fecha de nacimiento </label>&nbsp;
-                <input type="date" id="fecha" name="txtFecha"><br /><br />
+                <label class="diseño_label" for="fecha">Fecha de nacimiento </label>&nbsp;
+                <input class="diseño_imput" type="date" id="fecha" name="txtFecha"><br /><br />
 
-                <label for="email">Correo electrónico:</label>&nbsp;
-                <input type="email" id="email" name="txtCorreo"><br /><br />
+                <label class="diseño_label" for="email">Correo electrónico:</label>&nbsp;
+                <input class="diseño_imput" type="email" id="email" name="txtCorreo"><br /><br />
 
-                <label for="password">Contraseña</label>&nbsp;
-                <input type="password" id="password" name="txtContraseña"><br /><br />
+                <label class="diseño_label" for="password">Contraseña</label>&nbsp;
+                <input class="diseño_imput" type="password" id="password" name="txtContraseña"><br /><br />
 
-                <label for="documento">Seleccionar documento: </label>&nbsp;
-                <select id="documento" name="Tipo de documento">&nbsp;
+                <label class="diseño_label" for="documento">Seleccionar documento: </label>&nbsp;
+                <select class="diseño_imput" id="documento" name="Tipo de documento">&nbsp;
                     <option value="" selected="true">Seleccione su tipo de documento</option>                    
                     <option value="TI">Tarjeta de identidad</option>
                     <option value="CC">Cedula de ciudadanía</option>
                     <option value="CE">Cedula de extrangeria</option>
                 </select><br /><br />
 
-                <label>Seleccione su genero:</label>&nbsp;
-                <label>Masculino</label><input type="radio" name="genero" value="Masculino">
+                <label class="diseño_label">Seleccione su genero:</label>&nbsp;
+                <label >Masculino</label><input type="radio" name="genero" value="Masculino">
                 <label>Femenino</label><input type="radio" name="genero" value="Femenino"><br /><br />
 
-                <label>Seleccione materias a cursar: </label>&nbsp;&nbsp;
+                <label class="diseño_label">Seleccione materias a cursar: </label>&nbsp;
                 <label>Matematicas</label>
-                <input type="checkbox" name="materias" value="matematicas" checked><br />
+                <input type="checkbox" name="materias" value="matematicas" checked>
                 <label>Fisica</label>
-                <input type="checkbox" name="materias" value="Fisica"><br />
+                <input type="checkbox" name="materias" value="Fisica">
                 <label>Trigonometria</label>
                 <input type="checkbox" name="materias" value="Trigonometria" ><br /><br />
 
-                <label>Ingrese observaciones</label>&nbsp;
-                <textarea name="observaciones" rows="3" cols="50"></textarea><br /><br />
-
-                <input type="submit" value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="submit" value="Cancelar">
+                <label class="diseño_label">Ingrese observaciones</label>&nbsp;
+                <textarea class="diseño_imput" name="observaciones" rows="3" cols="50"></textarea>
+                <br /><br />
+                
+                <center>
+                <input class="boton_formulario" type="submit" value="Grabar">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="boton_formulario" type="submit" value="Cancelar">
+                </center>
             </form>
             <br />
             <h2>Listado de materias en la semana</h2>
@@ -94,12 +98,94 @@
         </center> 
     </main>
 
-    <footer> 
-        <div class="estilo_div">
+    <footer>
+        <br /><br />        
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Titulo 1</h1>
+                </div>
+                <div class="caja_amarilla">
+                    <i class="icono1 fas fa-apple-alt"></i>
+                </div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
+                </div>
+
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
+                </div>
+            </div>
+            <div class="caja_roja">    
+                <button class="diseño_boton">Guardar</button>          
+            </div>
+        </div>        
+
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Titulo 1</h1>
+                </div>
+                <div class="caja_amarilla">
+                    <i class="icono1 fas fa-apple-alt"></i>
+                </div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
+                </div>
+
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
+                </div>
+            </div>
+            <div class="caja_roja">    
+                <button class="diseño_boton">Guardar</button>          
+            </div>
+        </div>        
+
+        <div class="caja_grande">
+            <div class="caja_morada">
+                <div class="caja_naranja">
+                    <h1>Titulo 1</h1>
+                </div>
+                <div class="caja_amarilla">
+                    <i class="icono1 fas fa-apple-alt"></i>
+                </div>
+            </div>
+            <div class="caja_azul_oscuro">
+                <div class="caja_azul_claro">
+                    <p>prueba1</p>
+                    <p>prueba2</p>
+                    <p>prueba3</p>
+                </div>
+
+                <div class="caja_verde">
+                    <p>parrafo1</p>
+                    <p>parrafo2</p>
+                    <p>parrafo3</p>
+                </div>
+            </div>
+            <div class="caja_roja">    
+                <button class="diseño_boton">Guardar</button>          
+            </div>
+        </div>        
+
+        <!--<div class="estilo_div">
             <p id="parrafo1">Realizando prueba parrafo 1</p>
             <p id="parrafo2">Realizando prueba parrafo 2</p>
             <p >Realizando prueba parrafo 3</p>
-        </div>         
+        </div>-->               
     </footer>     
 </body>
 </html>
