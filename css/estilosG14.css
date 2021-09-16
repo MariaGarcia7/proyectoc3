@@ -95,8 +95,13 @@ body{
     border-color: orange;
     margin: 20px;
 }
+.derecha{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
 #menu ul{
-    display: flex;/*Para que me quede horizontal algo en frente del otro*/
+    display: flex;/*Para que me quede horizontal algo en frente del otro PONGO FLEX*/
     list-style: none; /*No coloque ningun estilo de puntico o circulo como viñeta*/
     justify-content: center;
 }
@@ -144,4 +149,81 @@ body{
 .boton_formulario:hover{
     background-color: orangered;
     cursor: pointer;
+}
+.estilo_tabla{
+    width: 80%;
+    border-collapse: collapse;
+    /*border-style: solid;
+    border-color: black;*/
+    border: 2px solid black;
+}
+table, th, td{
+    border: 1px solid black;    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+th{
+    background-color: rgba(148, 201, 138, 0.767);
+}
+.color1{
+    background-color: blueviolet;
+}
+.color2{
+    background-color:cornflowerblue;
+}
+.color3{
+    background-color:khaki;
+}
+.alinear_logo{
+    text-align: center;
+}
+.row{
+    padding-bottom: 30px;
+}
+.btn{
+    width: 100%;
+}
+/*Para configurar la pagina para dispositivos:
+si el tamaño del dospositivo es 640 px entonces ...*/
+@media(max-width: 640px){
+    header{
+        text-align: center;        
+    }
+    #menu ul{
+        flex-direction: column;/*Para que me quede UN BOTON DEBAJO DE OTRO pongo flex-direction: column se ajusta la pantalla pequeña de celular*/   
+        align-items: center;  
+
+    }
+    #menu li a{
+        width: 300px;
+        height: 40px;
+        background-color:coral ; /*en caso tal que quiera que cambie de color*/
+    }    
+    .formulario{
+        width: 90%;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+    } 
+    .boton_formulario{
+        width: 30%;
+        height: 30px;  
+    }  
+    .caja_grande{
+        width: 90%;
+        display: block; /*Para colocar las cajas de forma una debajo de otra*/  
+        margin-bottom: 20px;
+    }
+}
+/*Para tablet o pantallas intermedias*/
+@media(min-width: 640px) and (max-width: 1280px){
+    .formulario{
+        width: 90%;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+    } 
+    .caja_grande{
+        width: 90%;
+        display: block; /*Para colocar las cajas de forma una debajo de otra*/  
+        margin-bottom: 20px;
+    }
 }
